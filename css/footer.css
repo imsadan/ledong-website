@@ -1,0 +1,129 @@
+/**
+**footer的通用css样式
+**/
+
+/*脚部*/
+.fonter_top_line{
+	background-color:#ddd;
+	width:100%;
+	height:80px;	
+	min-width:1200px;
+}
+
+.fonter_top_line a{
+	width:110px;
+	letter-spacing: 0.1em;
+	font:14px Microsoft YaHei;
+	color: #000;
+	border:1px solid #000;
+	border-radius: 100px;
+	background-color:#ddd;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	margin-left:90%;
+}
+
+.footer_ld{
+	width:120px;
+	height:60px;
+	margin-left:10%;
+	float:left;
+	
+}
+#footer_ld_txt{
+	font:18px 'Microsoft YaHei';
+	padding-top:20px;
+	text-indent:3em;
+}
+/*尾*/
+.footer_main{
+	width:100%;
+	height:500px;
+	min-width:1200px;
+	background-color:#FFDEAD;
+}
+.footer_center{
+	width:60%;
+	height:320px;
+	margin-left:20%;
+	text-align:center;
+}
+ #footer_txt{
+	font:30px '宋体';
+	color:#fff;
+}
+
+.footer_cen_pc{
+	width:30%;
+	height:270px;
+	float:left;
+}
+.footer_cen_pc2{
+	width:30%;
+	height:270px;
+	float:left;
+}
+.footer_cen_pc3{
+	width:40%;
+	height:270px;
+	float:left;		
+}
+
+#pc1_txt{
+	font:18px 'Microsoft YaHei';
+	color:#fff;
+}
+
+#email{
+    width:200px;
+	letter-spacing: 0.1em;
+	font:14px Microsoft YaHei;
+	color: #000;
+	border:1px solid #fff;
+	border-radius: 100px;
+	background-color:#fff;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+#maintext{
+	border-radius: 10px;
+
+}
+
+#sendBtn{
+	width:80px;
+	border-radius: 40px;
+	border:1px solid #fff;
+	margin-left:-50px;
+}
+
+#pc2_txt{
+	font:17px 'Microsoft YaHei';
+	color:#fff;
+}
+
+.taob{
+	width:70px;
+	height:70px;
+	border:1px solid red;
+	float:right;
+	margin-top:-30px;
+}
+.weix{
+	width:70px;
+	height:70px;
+	float:right;
+	margin-top:-30px;
+    background-color:#fff;	
+}
+
+#footer_last{
+	width:100%;
+	height:80px;
+	margin-top:50px;
+	background-color:#FFFAF0; 
+}
