@@ -14,7 +14,10 @@
 <link href="css/video-js.css" rel="stylesheet">
 <script src="js/videojs-ie8.min.js"></script>
 <!-- 时间轴-->
-
+<link rel="stylesheet" type="text/css" href="css/history.css">
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/history.js"></script>
 <style></style>
 </head>
 <body>
@@ -255,7 +258,6 @@
 	   </div>
 	</div>
 </div>
-<script src="js/layui.js"></script>
 <div class="newslist">
     <p style="font:36px 'Microsoft YaHei';">新闻中心</p>
 	<div class="newslist_center">
@@ -263,40 +265,93 @@
 	  <p class="newslist_top_txt">乐动新闻资讯</p>
 	  <div class="newslist_left">
 	  <!--时间轴-->
-		<ul class="layui-timeline" style="margin:50px;margin-left:100px;">
-		  <li class="layui-timeline-item">		  
-		  	<div id="time_btn2"><i class="fa fa-chevron-up" id="time_fa2"></i></div>
-			<div class="layui-timeline-content layui-text" style="text-align:left;">
-			  <p style="height:50px;">
-			  </p>
+		<div id="arrow" style="display:none;">
+			<ul>
+				<li class="arrowup"></li>
+				<li class="arrowdown"></li>
+			</ul>
+		</div>
+		<div id="history">			
+			<div id="content">
+				<ul class="list">
+					<li>
+						<div class="liwrap">
+							<div class="lileft">
+								<div class="date">
+									<span class="year">2017</span>
+									<span class="md">7月</span>
+								</div>
+							</div>					
+							<div class="point"><b></b></div>					
+							<div class="liright">
+								<div class="histt" id="histt"><a>我是谁？我想干什么？</a></div>
+								<div class="hisct" id="hisct">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liwrap">
+							<div class="lileft">
+								<div class="date">
+									<span class="year">2017</span>
+									<span class="md">7月</span>
+								</div>
+							</div>					
+							<div class="point"><b></b></div>					
+							<div class="liright">
+								<div class="histt" id="histt"><a>我是谁？我想干什么？</a></div>
+								<div class="hisct" id="hisct">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liwrap">
+							<div class="lileft">
+								<div class="date">
+									<span class="year">2017</span>
+									<span class="md">7月</span>
+								</div>
+							</div>					
+							<div class="point"><b></b></div>					
+							<div class="liright">
+								<div class="histt" id="histt"><a>我是谁？我想干什么？</a></div>
+								<div class="hisct" id="hisct">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liwrap">
+							<div class="lileft">
+								<div class="date">
+									<span class="year">2017</span>
+									<span class="md">7月</span>
+								</div>
+							</div>					
+							<div class="point"><b></b></div>					
+							<div class="liright">
+								<div class="histt" id="histt"><a>我是谁？我想干什么？</a></div>
+								<div class="hisct" id="hisct">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liwrap">
+							<div class="lileft">
+								<div class="date">
+									<span class="year">2017</span>
+									<span class="md">7月</span>
+								</div>
+							</div>					
+							<div class="point"><b></b></div>					
+							<div class="liright">
+								<div class="histt" id="histt"><a>我是谁？我想干什么？</a></div>
+								<div class="hisct" id="hisct">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</div>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
-		  </li>		
-		  <li class="layui-timeline-item">
-			<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-			<div class="layui-timeline-content layui-text" style="text-align:left;">
-			  <h3 class="layui-timeline-title" id="time_txt02">2017年7月 &nbsp;&nbsp;我是谁？我想干什么？</h3>
-			  <p id="time_txt">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</p>
-			</div>
-		  </li>
-		  <li class="layui-timeline-item">
-			<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-			<div class="layui-timeline-content layui-text" style="text-align:left;">
-			  <h3 class="layui-timeline-title">2017年7月 &nbsp;&nbsp;<b id="time_txt02">我是谁？我想干什么？</b></h3>
-			  <p id="time_txt">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</p>
-			</div>
-		  </li>
-		  <li class="layui-timeline-item" style="text-align:left;">
-			<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-			<div class="layui-timeline-content layui-text">
-			  <h3 class="layui-timeline-title">2017年7月 &nbsp;&nbsp;<b id="time_txt02">我是谁？我想干什么？</b></h3>
-			  <p id="time_txt">照顾你们比翻山越岭更累。但看你们成长比登顶更<br>有成就感。</p>
-			</div>
-		  </li>
-		  <li class="layui-timeline-item" style="text-align:left;">
-			<div id="time_btn"><i class="fa fa-chevron-down" id="time_fa"></i></div>
-            <p style="margin-left:-8px;"><b><a href="">更多</a></b></p>
-		  </li>
-		</ul>	
+		</div>			
 	  </div>
 	  <div class="newslist_right">
 		<div id="n_right_pic01"></div> 	  

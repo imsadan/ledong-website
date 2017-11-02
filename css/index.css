@@ -113,6 +113,7 @@
 		color:#000;
 		margin-top:20px;
    }
+     
 }
 .top_6_pic{
 	width:1002px;
@@ -476,10 +477,30 @@
 .newslist_left{
 	width:50%;
 	height:650px;
-	border:1px solid red;
 	float:left;
+	text-align:left;
+}
+/*时间轴字体*/
+#histt a{
+	font:20px 'Microsoft YaHei';
+	color:#000;
+}
+#hisct{
+	font:14px '宋体';
+	color:#000;	
 }
 
+@media (max-width:1300px){
+   
+	#histt a{
+		font:16px 'Microsoft YaHei';
+		color:#000;
+	}
+	#hisct{
+		font:12px '宋体';
+		color:#000;	
+	}   
+}
 .newslist_right{
 	width:50%;
 	height:650px;
