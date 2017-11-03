@@ -85,11 +85,16 @@
 #top_txt{
 	width:50%;
 	height:80px;
-	border:1px solid red;
 	position:absolute;
 	margin-left:25%;
 	margin-top:150px;
 	z-index:9999 !important;
+}
+
+#top_txt #txt{
+	font:40px '宋体';
+	color:#888888;
+	margin-top:10px;
 }
 
 #top_txt2{
@@ -112,8 +117,32 @@
 		color:#000;
 		margin-top:20px;
    }
+<<<<<<< HEAD
 
+=======
+   
+   #top_txt #txt{
+		font:32px '宋体';
+		color:#888888;
+   }
+     
 }
+
+@media (max-width:1600px){
+	.txt2{
+		font:16px 'Microsoft YaHei';
+		color:#000;
+		margin-top:20px;
+   }
+   
+   #top_txt #txt{
+		font:32px '宋体';
+		color:#888888;
+   }
+     
+>>>>>>> e8eb3ae29bb74cc16fc1950f2538bdb2e7e4bd61
+}
+
 .top_6_pic{
 	width:1002px;
 	height:448px;
@@ -487,6 +516,18 @@
 #hisct{
 	font:14px '宋体';
 	color:#000;
+}
+.history_cri_up{
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    border:2px solid #888888;
+    margin-left:194px;	
+}
+.history_cri_txt a{
+	font:16px 'Microsoft YaHei';
+	color:#000;
+	margin-left:190px;
 }
 
 @media (max-width:1300px){

@@ -70,10 +70,10 @@ $(function(){
 		var b=0,f=$(".list li").length,d=0,a=!0,c;
 		(function(){
 			var a=$(window).height();
-			890<=a&&(row=6);
-			800<=a&&890>a&&(row=5);
+			890<=a&&(row=4);
+			800<=a&&890>a&&(row=4);
 			726<=a&& 800>a&&(row=4);
-			726>a&&(row=3)}
+			726>a&&(row=4)}
 		)();
 		var h=f-row;
 		$(".list").height(400);
